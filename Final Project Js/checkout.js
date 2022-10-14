@@ -33,6 +33,8 @@ var itemInmyCart={
   product:productItems,
   totalAmount:totalcost
 }
+console.log(itemsInCart)
+if(itemsInCart>0){
 $.get("https://jsonplaceholder.typicode.com/todos", itemInmyCart, function() {
   alert('Order Placed Successfully');
   localStorage.setItem('productItems', []);
@@ -41,7 +43,12 @@ $.get("https://jsonplaceholder.typicode.com/todos", itemInmyCart, function() {
   itemsInCart=0;
   localStorage.setItem('quantity',itemsInCart);
   
-});
+});}else{
+  alert("No items in cart");
+  window.location.reload();
+  itemsInCart=0;
+  localStorage.setItem('quantity',itemsInCart);
+}
 });
 $("#cancelBtn").click(function(e){
 confirm("It will delete all items in your cart!!!! ")

@@ -24,7 +24,7 @@ $(document).ready(function(){
     text_container.classList.add('text_container');
     card.classList.add('card');
     var anger=document.createElement('a');
-    anger.href="/FINAL PROJECT-JS/ProductDescription Page/pdp.html?productId="+product.id;
+    anger.href="pdp.html?productId="+product.id;
     var img = document.createElement('img');
     img.src = product.preview;
     img.alt=product.name
