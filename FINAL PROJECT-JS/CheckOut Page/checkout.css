@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#top-bar{ 
+    display: flex;
+    align-items: center;
+    height:80px;
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+     z-index: 10;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+#siteName a{
+    text-decoration: none;
+    color: black;
+    margin-left: 90px;
+}
+#leftsec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:50%;
+}
+#shop{
+    font-size: 36px;
+    font-weight: 900;
+}
+#lane{
+    font-size: 36px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#searchwrapper{
+    display: flex;
+    margin-left: 30px;
+    width:25%;
+    position:relative;
+    margin-right: 150px;
+}
+#searchwrapper button{
+    border:none;
+    position: absolute; 
+    left:13px;
+    top:10px
+}
+#searchwrapper > i {
+    color: #999;
+    font-size: 18px ;
+    transform: translateY(-50%); 
+    display:flex;
+    align-items: center;
+
+}
+#searchbox {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+    height:37px
+}
+#rightSec{
+    display: flex;
+    width:10%;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+#userImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    margin-left: 30px;
+}
+#cart{
+color:black;
+font-size: 18px;
+}
+#miniCart{
+    position:absolute;
+    top:16px;
+    right:173px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    
+}
+.checkoutImg {
+    width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+#left_sec{
+    margin-top: 80px;
+    padding:80px 0px 0px 150px
+}
+#heading{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 48px;
+   }
+ #left_sec h3,#right_sec h3{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+ }
+
+#items_Container{
+display: flex; 
+justify-content: center; 
+/* align-items: center; */
+}
+#card_container{
+   display: inline-block;
+   width:40%;
+   margin-right: 35px;
+}
+.card{
+    display: flex;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.contents h4{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+.contents p,#right_sec span{
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+#edyoda-logo{
+width: 128px;
+position: fixed;
+bottom: 50px;
+right: 50px;
+}
+#right_sec{
+    width: 36%;
+    height: fit-content;
+    /* margin-left: 3%; */
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+}
+#plceordrBtn,#cancelBtn{
+    background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+#total_price{
+    font-size: 24px !important;
+    color: black;
+    opacity: 0.8;
+    font-weight: 800;
+    margin-left: 4px;
+}
+#footer{
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+#footer p{
+text-transform: uppercase;
+font-weight: 600;
+font-size: 16px;
+color: white;
+opacity: 0.9;
+letter-spacing: 1px;
+display: block;
+margin-bottom: 30px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    opacity: 0.8;  
+    line-height: 1px;
+}
+
+@media screen and (max-width:480px) {
+    #edyoda-logo{
+        width: 60px;
+        height:30px;
+        right:74px
+            }
+    
+    #footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer p{
+    
+    font-size: 14px;
+    
+    }
+    #footer a{
+       
+        font-size: 12px;
+        
+    }
+    #sec_container h2{
+    margin-left: 10px;
+    font-size: 16px;
+    }
+    
+    #top-bar{ 
+        display: flex; 
+        align-items: center;
+        height:80px;
+        width: 100%;
+        box-shadow: 0 2px 5px #ccc;
+        background-color: white;
+         z-index: 10;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+    }
+    #siteName a{
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+    }
+    #leftsec{
+        display: inline-block;
+        justify-content: flex-start;
+        align-items: center;
+        width:50%;
+    }
+    #shop{
+        font-size: 24px;
+       
+    }
+    #lane{
+        font-size: 24px;
+    }
+    nav a{
+       
+        display: none;
+    }
+    #searchwrapper{
+        
+        display: none;
+    }
+    
+    
+    #rightSec{
+        display: flex;
+        width:30%;
+        justify-content: flex-end;
+        
+    }
+    #userImg{
+        width: 40px;
+        height: 40px;
+       
+    }
+    #cart{
+    color:black;
+    font-size: 18px;
+    }
+    #miniCart{
+        position:absolute;
+        top:16px;
+        right:125px;
+           
+    }
+
+.checkoutImg {
+    width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+#left_sec{
+    margin-top: 80px;
+    padding:25px 0px 0px 10px
+}
+#heading{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 5px;
+   }
+ #left_sec h3,#right_sec h3{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+ }
+
+#items_Container{
+display: flex; 
+flex-direction: column;
+justify-content: center; 
+/* align-items: center; */
+}
+#card_container{
+   display: inline-block;
+   width:94%;
+   margin-right: 35px;
+}
+
+.contents h4{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.contents p,#right_sec span{
+    
+    font-size: 14px;
+}
+
+#edyoda-logo{
+width: 60px;
+right:30px;
+bottom: 30px;
+
+}
+#right_sec{
+    width: 90%;
+  
+}
+#plceordrBtn,#cancelBtn{
+    background-color: #009688;
+    font-size: 14px;
+   }
+#total_price{
+    font-size: 18px !important;
+    color: black;
+    opacity: 0.8;
+    font-weight: 800;
+    margin-left: 4px;
+}
+}
